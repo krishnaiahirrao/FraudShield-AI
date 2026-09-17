@@ -14,7 +14,7 @@ from sklearn.metrics import (
 st.set_page_config(page_title="FraudShield AI", page_icon="🛡️", layout="wide")
 
 MODEL_PATH = "models/fraud_model.joblib"
-DATA_PATH = "data/creditcard.csv"
+DATA_PATH = "data/demo_transactions.csv"
 FEATURES = ["Time"] + [f"V{i}" for i in range(1, 29)] + ["Amount"]
 
 if not os.path.exists(MODEL_PATH):
